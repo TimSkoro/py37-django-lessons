@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import *
+from .models import Product, Frame, Car
 
 
 # Register your models here.
@@ -34,5 +34,6 @@ class ProductAdmin(admin.ModelAdmin):  # 3rd
 @admin.register(Frame)
 class FrameAdmin(admin.ModelAdmin):
     search_fields = ['title']
+
 
 admin.site.register(Car)

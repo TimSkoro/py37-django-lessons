@@ -3,7 +3,6 @@ import uuid
 from django.contrib.auth.models import User
 from django.db import models
 from time import time
-from slugify import slugify
 
 
 class Comment(models.Model):
@@ -30,7 +29,6 @@ class News(models.Model):
         verbose_name = 'Novost'
         ordering = ['-published_at', 'pk']
         get_latest_by = 'published_at'
-
 
     @property
     def published(self):
