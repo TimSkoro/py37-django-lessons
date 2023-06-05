@@ -1,6 +1,6 @@
-from django.urls import path, include
+from django.urls import path
 
-from news.views import *
+from news.views import id_view, slug_view
 
 urlpatterns = [
     path('slug_test/<int:id>', id_view),
